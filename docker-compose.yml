@@ -5,7 +5,7 @@ services:
     container_name: "mysql-v8.0"
     build: ./mysql8.0
     ports:
-      - 3307:3306
+      - 3308:3306
     networks:
       - databases
     volumes:
@@ -19,7 +19,7 @@ services:
     container_name: "mysql-v5.7"
     build: ./mysql5.7
     ports:
-      - 3308:3306
+      - 3307:3306
     networks:
       - databases
     volumes:
