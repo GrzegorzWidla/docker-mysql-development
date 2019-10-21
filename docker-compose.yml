@@ -15,7 +15,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: pass
 
-  mysql5.0:
+  mysql5.7:
     container_name: "mysql-v5.7"
     build: ./mysql5.7
     ports:
