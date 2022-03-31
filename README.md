@@ -11,7 +11,14 @@
 
 1. Call `docker-compose run -d servicename` to run single server in the background.
 2. Connect to the server with its respective credentials by following `docker-compose.yml` configuration.
-    
-### Disclaimer:
+
+### Throught node
+
+* `npm run mysql5.7` to run in detached mode.
+* `npm run mysql5.7:attached` to run in attached mode.
+* `npm run mysql8.0` to run in detached mode.
+* `npm run mysql8.0:attached` to run in attached mode.
+
+## Disclaimer:
 
 This Docker setup is very insecure and should only be used for local development purposes.
