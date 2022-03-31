@@ -1,0 +1,26 @@
+{
+  "license": "MIT",
+  "name": "mysql-containers",
+  "version": "1.0.2",
+  "description": "Set of Docker container for running most common versions of MySQL database server",
+  "scripts": {
+    "mysql5.7": "docker-compose up -d mysql5.7",
+    "mysql5.7:attached": "docker-compose up mysql5.7",
+    "mysql8.0": "docker-compose up -d mysql8.0",
+    "mysql8.0:attached": "docker-compose up mysql8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrzegorzWidla/docker-mysql-development.git"
+  },
+  "keywords": [
+    "MySQL",
+    "Docker"
+  ],
+  "author": "VIDUA Grzegorz Widła",
+  "bugs": {
+    "url": "https://github.com/GrzegorzWidla/docker-mysql-development/issues"
+  },
+  "homepage": "https://github.com/GrzegorzWidla/docker-mysql-development#readme"
+}
+

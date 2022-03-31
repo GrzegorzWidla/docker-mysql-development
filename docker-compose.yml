@@ -11,7 +11,12 @@ services:
     volumes:
       - ./data/mysql8:/var/lib/mysql
       - ./logs/mysql8:/var/log/mysql
-    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_520_ci --default-authentication-plugin=mysql_native_password --innodb_use_native_aio=off
+    command: >
+        --character-set-server=utf8mb4 
+        --collation-server=utf8mb4_unicode_520_ci 
+        --default-authentication-plugin=mysql_native_password 
+        --innodb_use_native_aio=off 
+        --innodb_force_recovery=0 
     environment:
       MYSQL_ROOT_PASSWORD: pass
 
@@ -25,7 +30,12 @@ services:
     volumes:
       - ./data/mysql5:/var/lib/mysql
       - ./logs/mysql5:/var/log/mysql
-    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_520_ci --default-authentication-plugin=mysql_native_password --innodb_use_native_aio=off
+    command: >
+        --character-set-server=utf8mb4 
+        --collation-server=utf8mb4_unicode_520_ci 
+        --default-authentication-plugin=mysql_native_password 
+        --innodb_use_native_aio=off 
+        --innodb_force_recovery=0 
     environment:
       MYSQL_ROOT_PASSWORD: pass
 
@@ -33,3 +43,4 @@ networks:
   databases:
     name: mysql-databases
     driver: bridge
+
